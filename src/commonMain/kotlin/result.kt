@@ -1,6 +1,7 @@
-import com.soywiz.korim.color.Colors
 val options = arrayOf("Rock", "Paper", "Scissors")
+
 fun getGameChoice (option: Array<String>, random: Int) = option[random]
+
 fun getResult (userChoice: String) : String {
     var random = (0..2).random()
     val gameChoice = getGameChoice(options, random)
